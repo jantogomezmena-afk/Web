@@ -517,6 +517,15 @@
         () => { cargarRegistros(); }
       )
       .subscribe();
+
+    //════════════════════════════════════════════
+    // Convierte el valor de hibrido a mayusculas
+    //════════════════════════════════════════════
+    const inputHibrido = document.getElementById('hibrido');
+    inputHibrido.addEventListener('input', function() {
+    // Convierte el valor actual a mayúsculas
+    this.value = this.value.toUpperCase();
+    });
   </script>
 </body>
 </html>
